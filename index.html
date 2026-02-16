@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="darkModeToggle">Dark Mode🌙</button>
+    <button id="scrollTopBtn">↑</button>
     <div class="main-container">
         <div class="sidebar">
             <div class="profile">
                 <img src="./image/img.jpg" alt="">
                 <h2>Muhtarima Raisa</h2>
-                <p>Software Engineering Student</p>
+                <p id="typingText"></p>
             </div>
             <div class="contact">
                 <div class="email">
@@ -95,6 +97,12 @@
             <div class="portfolio">
                   <h2 class="heading">Portfolio</h2>
                   <div class="line"></div>
+                  <div class="filter-buttons">
+                    <button onclick="filterProjects('all')">All</button>
+                    <button onclick="filterProjects('js')">JavaScript</button>
+                    <button onclick="filterProjects('java')">Java</button>
+                    <button onclick="filterProjects('python')">Python</button>
+                </div>
                   <div class="project-container">
                     <div class="project">
                         <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGNvZGluZ3xlbnwwfHx8fDE2NTg0MjU5NjM&ixlib=rb-1.2.1&q=80&w=400" alt="">
@@ -156,5 +164,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>
