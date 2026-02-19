@@ -1,3 +1,4 @@
+/* Reset & Global Styles */
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@ body{
     color: #e9e9ed;
     line-height: 1.6;
 }
+/* Main Layout Structure */
 .main-container{
     display: grid;
     max-width: 1200px;
@@ -17,6 +19,7 @@ body{
     padding-top: 40px;
     margin: auto;
 }
+/* Sidebar Section */
 .sidebar{
     height: 90vh;
     background-color: #2a2a2a;
@@ -26,12 +29,15 @@ body{
     position: sticky;
     top: 40px;
 }
+/* Main Content Area */
 .main-content{
     background-color: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 16px;
     padding: 40px;
 }
+/* Profile Section */
+
 .profile{
     text-align: center;
 }
@@ -57,6 +63,7 @@ body{
     display: inline-block;
     margin-top: 10px;
 }
+/* Contact Section */
 .contact{
     margin-top: 30px;
     border-top: 2px solid #3a3a3a;
@@ -74,6 +81,7 @@ body{
 .email,.phone{
     margin-bottom: 15px;
 }
+/* Social Media Icons */
 .social{
     margin-top: 30px;
     border-top: 2px solid #3a3a3a;
@@ -91,6 +99,7 @@ body{
     transform: translateY(-6px);
     box-shadow: 0 0 20px rgba(209,156,224,0.4);
 }
+/* Navigation Bar */
 #navigation{
     border-bottom: 2px solid #3a3a3a;
     margin-bottom: 20px;
@@ -110,6 +119,7 @@ nav a{
 nav a:hover{
     color: #f0c8ff;
 }
+/* About Section */
 .heading{
     color: #ffffff;
     font-size: 2rem;
@@ -128,6 +138,7 @@ nav a:hover{
 #about{
     margin-bottom: 40px;
 }
+/* Skills Section */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(120px,1fr));
@@ -157,6 +168,7 @@ nav a:hover{
     transform: translateY(-6px);
     box-shadow: 0 0 20px rgba(209,156,224,0.4);
 }
+/* Education Section */
 #education{
     margin-top: 30px;
 }
@@ -248,6 +260,7 @@ nav a:hover{
     font-size: 0.75rem;
     margin-right: 5px;
 }
+/* Responsive Design */
 @media screen and (max-width:1200px){
     .main-container{
         grid-template-columns: 1fr;
@@ -272,20 +285,17 @@ nav a:hover{
         gap: 40px;
     }
 }
+/* Dark Mode Styles */
+
 .dark-mode {
     background-color: #121212;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-#scrollTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-}
 .active {
     color: #e449e4;
 }
+/* Buttons (Dark Mode, Filter, Scroll Top) */
 #darkModeToggle {
     padding: 8px 16px;
     border: 2px solid #e449e4;
@@ -315,6 +325,13 @@ nav a:hover{
     background-color: #e449e4;
     color: #121212;
 }
+/* Scroll To Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 #scrollTopBtn {
     padding: 10px 14px;
     border: 2px solid #e449e4;
@@ -329,6 +346,7 @@ nav a:hover{
     background-color: #e449e4;
     color: #121212;
 }
+/* Footer */
 footer{
     text-align: center;
     padding: 20px;
