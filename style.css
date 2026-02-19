@@ -329,3 +329,10 @@ nav a:hover{
     background-color: #e449e4;
     color: #121212;
 }
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #3a3a3a;
+    color: #aaa;
+}
